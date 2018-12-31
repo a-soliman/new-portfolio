@@ -1,0 +1,16 @@
+.title {
+  @extend .basic-text;
+  font-family: $font-ralway;
+  font-size: $xxxl-size;
+  font-weight: 700;
+}
+
+.subhead {
+  @extend .basic-text;
+  color: $green;
+  font-family: $font-ralway;
+  font-size: $xl-size;
+  font-weight: 500;
+}
+.body {
+}

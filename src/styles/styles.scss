@@ -1,5 +1,7 @@
 @import "./base/settings";
 @import "./base/base";
+@import "./components/app_style";
+
 @import "./components/box-layout";
 @import "./components/button";
 @import "./components/header";
@@ -12,4 +14,8 @@
 @import "./components/visibility";
 @import "./components/list";
 @import "./components/loader";
-@import "./components/app_style";
+
+@import "./components/intro";
+
+@import "./components/typography";
+@import "./components/responsive";
