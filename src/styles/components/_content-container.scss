@@ -1,5 +1,4 @@
-.content-container {
-  margin: 0 auto;
-  padding: 0 $m-size;
-  max-width: 80rem;
+.full-height {
+  min-height: 85vh;
+  flex-direction: column;
 }
