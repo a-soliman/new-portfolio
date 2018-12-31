@@ -1,0 +1,19 @@
+.social-container {
+}
+
+.social--item {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+.social--link {
+  color: #fff;
+
+  &:hover {
+    color: $green;
+  }
+}
+
+.social--icon {
+  font-size: 24px;
+}

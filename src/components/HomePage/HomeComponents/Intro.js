@@ -1,4 +1,5 @@
 import React from "react";
+import SocialIcons from "../../ui/SocialIcons";
 
 class Intro extends React.Component {
   render() {
@@ -20,6 +21,9 @@ class Intro extends React.Component {
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
+        </div>
+        <div className="intro--social-wrapper">
+          <SocialIcons />
         </div>
       </div>
     );
