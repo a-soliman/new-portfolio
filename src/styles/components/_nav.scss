@@ -22,17 +22,39 @@
 
 .nav--nav-item {
   background: $nav-grey;
-  width: 58px;
+  display: inline-block;
+  width: 60px;
   height: 58px;
   text-align: center;
   margin-bottom: 3px;
   color: #fff;
+  position: relative;
   &:hover {
-    color: $green;
+    color: #fff;
   }
+}
+
+.nav--active {
+  background: $green;
 }
 .nav--icon {
   font-size: 20px;
   line-height: 60px;
   text-align: center;
+}
+
+.nav--off-set {
+  align-items: center;
+  display: flex;
+  background: #14b19b;
+  font-size: $s-size;
+  position: absolute;
+  height: 58px;
+  left: 60px;
+  top: 0;
+  width: 0;
+  justify-content: center;
+  -webkit-transition: width 0.5s; /* For Safari 3.1 to 6.0 */
+  transition: width 0.5s;
+  overflow: hidden;
 }

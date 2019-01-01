@@ -39,9 +39,15 @@ class Navigation extends React.Component {
 
     return navList.map((item, i) => (
       <li className="nav--nav-item" key={i}>
-        <Link className="nav--nav-item" to={`#${item.id}`}>
+        <a
+          className="nav--nav-item"
+          href={`/#${item.id}`}
+          onMouseEnter={this.onHoverHandler}
+          onMouseLeave={this.onMouseOutHandler}
+        >
           <i className={`nav--icon ${this.getIcon(item)}`} />
-        </Link>
+          <div className="nav--off-set">{item.text}</div>
+        </a>
       </li>
     ));
   };
@@ -58,6 +64,41 @@ class Navigation extends React.Component {
     else if (text === "contact") className = "fa fa-phone";
 
     return className;
+  };
+
+  onHoverHandler = event => {
+    let element = this.getNavElement(event);
+    element.classList.add("nav--active");
+
+    let offSetDiv = Array.from(element.children)[1];
+    offSetDiv.style = "width: 106px";
+  };
+
+  onMouseOutHandler = event => {
+    let element = this.getNavElement(event);
+    element.classList.remove("nav--active");
+    let offSetDiv = Array.from(element.children)[1];
+    offSetDiv.style = "width: 0";
+  };
+
+  getNavElement = event => {
+    let item;
+    let element = event.target;
+
+    if (element.classList.contains("nav--nav-item")) item = element;
+    else {
+      while (element.parentNode) {
+        let parent = element.parentNode;
+
+        if (parent.classList.contains("nav--nav-item")) {
+          item = parent;
+          break;
+        } else {
+          element = parent;
+        }
+      }
+    }
+    return item;
   };
 
   render() {

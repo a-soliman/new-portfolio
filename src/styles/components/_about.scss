@@ -1,0 +1,10 @@
+.about {
+  background: url("/images/about-bg.png") fixed center center / cover;
+}
+.about--image-container,
+.about--text-container {
+  padding: $xxl-size;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
