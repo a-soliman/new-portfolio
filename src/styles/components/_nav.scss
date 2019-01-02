@@ -1,6 +1,6 @@
 .nav {
   background: #000;
-  width: 60px;
+  width: 50px;
   height: 100vh;
   position: fixed;
   z-index: 1000;
@@ -21,10 +21,12 @@
 }
 
 .nav--nav-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: $nav-grey;
-  display: inline-block;
-  width: 60px;
-  height: 58px;
+  width: 50px;
+  height: 50px;
   text-align: center;
   margin-bottom: 3px;
   color: #fff;
@@ -38,8 +40,7 @@
   background: $green;
 }
 .nav--icon {
-  font-size: 20px;
-  line-height: 60px;
+  font-size: $m-size;
   text-align: center;
 }
 
@@ -49,8 +50,8 @@
   background: #14b19b;
   font-size: $s-size;
   position: absolute;
-  height: 58px;
-  left: 60px;
+  height: 50px;
+  left: 50px;
   top: 0;
   width: 0;
   justify-content: center;
