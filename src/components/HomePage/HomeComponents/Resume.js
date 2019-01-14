@@ -1,13 +1,9 @@
-import React from 'react';
+import React from "react";
 
 class Resume extends React.Component {
-    render() {
-        return (
-            <div className="resume">
-                Resume Component
-            </div>
-        );
-    }
+  render() {
+    return <section className="resume">Resume Component</section>;
+  }
 }
 
 export default Resume;

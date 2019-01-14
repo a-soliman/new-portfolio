@@ -5,6 +5,15 @@
   font-weight: 700;
 }
 
+.med-title {
+  @extend .basic-text;
+  color: $green;
+  font-family: $font-ralway;
+  font-size: $xl-size;
+  font-weight: 500;
+  margin-bottom: $m-size;
+}
+
 .subhead {
   @extend .basic-text;
   color: $green;
@@ -12,5 +21,18 @@
   font-size: $xl-size;
   font-weight: 500;
 }
+
+.med-subhead {
+  @extend .basic-text;
+  color: $dark-grey;
+  font-family: $font-ralway;
+  font-size: $l-size;
+  font-weight: 500;
+  margin-bottom: $m-size;
+}
 .body {
+}
+
+.grey {
+  color: $grey !important;
 }

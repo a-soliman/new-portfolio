@@ -4,7 +4,7 @@ import SocialIcons from "../../ui/SocialIcons";
 class Intro extends React.Component {
   render() {
     return (
-      <div className="intro" id="intro">
+      <section className="intro" id="intro">
         <div className="dark-overlay" />
         <div className="intro--video-container">
           <video autoPlay loop id="video-bg" muted className="intro--video">
@@ -25,7 +25,7 @@ class Intro extends React.Component {
         <div className="intro--social-wrapper">
           <SocialIcons />
         </div>
-      </div>
+      </section>
     );
   }
 }
